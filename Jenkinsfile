@@ -13,11 +13,11 @@ pipeline {
                 cleanWs()
             }
         }
-        stage('Checkout SCM') {
-            steps {
-                git url: 'https://github.com/beer405/DevSecOps-CI-CD-Pipeline.git'
-            }
-        }
+        //stage('Checkout SCM') {
+          //  steps {
+            //    git url: 'https://github.com/beer405/DevSecOps-CI-CD-Pipeline.git'
+            //}
+        //}
         stage('Compiling Maven Code') {
             steps {
                 sh 'mvn clean compile'
