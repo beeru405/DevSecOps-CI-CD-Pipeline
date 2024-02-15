@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Checkout SCM') {
             steps {
-                git url: 'https://github.com/priyanshu-bhatt/DevSecOps-CI-CD-Pipeline.git'
+                git url: 'https://github.com/beer405/DevSecOps-CI-CD-Pipeline.git'
             }
         }
         stage('Compiling Maven Code') {
